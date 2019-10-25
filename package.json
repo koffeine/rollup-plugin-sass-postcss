@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-sass-postcss",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Rollup plugin for Sass and PostCSS",
   "keywords": [
     "rollup",
