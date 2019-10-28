@@ -8,6 +8,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Changed
+
+- Updated postcss to 7.0.21
+- Updated eslint to 6.6.0
+- Updated eslint-config-koffeine to 13.0.0
 
 ## [1.0.1] - 2019-10-25
 
