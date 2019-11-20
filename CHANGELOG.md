@@ -8,6 +8,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+
+## [1.0.6] - 2019-11-20
+
 ### Changed
 
 - Updated sass to 1.23.7
