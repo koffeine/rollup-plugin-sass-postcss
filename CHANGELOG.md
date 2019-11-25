@@ -8,6 +8,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Changed
+
+- Updated eslint to 6.7.1
+- Updated eslint-config-koffeine to 14.0.0
+
 
 ## [1.0.6] - 2019-11-20
 
