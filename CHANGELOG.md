@@ -10,6 +10,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Changed
 
+- Updated sass to 1.24.4
+- Updated postcss to 7.0.26
+- Changed rollup-pluginutils to @rollup/pluginutils
 - Updated devDependencies
 
 

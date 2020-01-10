@@ -3,7 +3,7 @@
 const { basename, dirname, extname, join, relative } = require('path');
 const { mkdirSync, writeFileSync } = require('fs');
 
-const { createFilter } = require('rollup-pluginutils');
+const { createFilter } = require('@rollup/pluginutils');
 
 const sass = require('./lib/sass.js');
 const postcss = require('./lib/postcss.js');
