@@ -8,6 +8,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Changed
+
+- Updated @rollup/pluginutils to 3.0.4
+
 
 ## [1.0.8] - 2020-01-10
 

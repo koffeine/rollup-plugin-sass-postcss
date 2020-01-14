@@ -28,7 +28,7 @@
     "eslint-config-koffeine": "14.0.2"
   },
   "dependencies": {
-    "@rollup/pluginutils": "3.0.3",
+    "@rollup/pluginutils": "3.0.4",
     "concat-with-sourcemaps": "1.1.0",
     "postcss": "7.0.26",
     "sass": "1.24.4"
