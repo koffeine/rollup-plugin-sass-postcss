@@ -31,6 +31,6 @@
     "@rollup/pluginutils": "3.0.4",
     "concat-with-sourcemaps": "1.1.0",
     "postcss": "7.0.26",
-    "sass": "1.24.4"
+    "sass": "1.25.0"
   }
 }
