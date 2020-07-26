@@ -1,12 +1,14 @@
+'use strict';
+
 module.exports = {
 	root: true,
 	extends: 'koffeine',
 	parserOptions: {
-		ecmaVersion: 2019, // 10
+		ecmaVersion: 2020, // 11
 		sourceType: 'script'
 	},
 	env: {
-		node: true,
-		es6: true
+		es2020: true,
+		node: true
 	}
 };

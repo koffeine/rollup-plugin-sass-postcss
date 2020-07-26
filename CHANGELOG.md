@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Updated @rollup/pluginutils to 3.1.0
 - Updated postcss to 7.0.32
 - Updated sass to 1.26.10
+- Updated devDependencies
 
 ### Fixed
 

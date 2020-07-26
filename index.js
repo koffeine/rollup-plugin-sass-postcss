@@ -15,7 +15,7 @@ module.exports = ({
 	sourcemap = false,
 	plugins = [],
 	output,
-	throwOnError = !process.env.ROLLUP_WATCH // eslint-disable-line no-process-env
+	throwOnError = !process.env.ROLLUP_WATCH
 } = {}) => {
 
 	const filter = createFilter(include, exclude);
