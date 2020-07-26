@@ -14,8 +14,7 @@ module.exports = ({
 	exclude,
 	sourcemap = false,
 	plugins = [],
-	output,
-	throwOnError = !process.env.ROLLUP_WATCH
+	output
 } = {}) => {
 
 	const filter = createFilter(include, exclude);
@@ -53,15 +52,6 @@ module.exports = ({
 						code: result.code,
 						map: result.map
 					};
-
-					return '';
-				})
-				.catch((e) => {
-					if (throwOnError) {
-						this.error(e);
-					} else {
-						this.warn(e);
-					}
 
 					return '';
 				});

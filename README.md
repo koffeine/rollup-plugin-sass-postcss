@@ -47,11 +47,7 @@ export default {
 
 			// where to save the output file (required)
 			// type: string
-			output: undefined,
-
-			// whether to handle compilation failure as error (true) or as warning (false)
-			// type: boolean
-			throwOnError: !process.env.ROLLUP_WATCH
+			output: undefined
 		})
 	]
 	// ...

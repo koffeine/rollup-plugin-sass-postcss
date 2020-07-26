@@ -18,6 +18,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Fixed
 
 - Fixed compatibility with rollup ^2.0.0
+- Fixed watch mode issue by always treating compilation failure as error (throwOnError in no longer an option)
 
 
 ## [1.0.9] - 2020-01-14
