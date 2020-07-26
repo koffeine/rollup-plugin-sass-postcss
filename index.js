@@ -67,9 +67,8 @@ module.exports = ({
 				});
 		},
 
-		generateBundle(outputOptions, bundle) {
-			const ids = [].concat(...Object.values(bundle).map(({ modules }) =>
-				Object.keys(modules).filter((id) => id in styles)));
+		generateBundle() {
+			const ids = Array.from(this.moduleIds).filter((id) => id in styles);
 
 			if (ids.length === 0) {
 				return;
