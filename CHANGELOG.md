@@ -8,6 +8,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Changed
+
+- README.md badge cleanup
+
 
 ## [1.0.10] - 2020-07-26
 

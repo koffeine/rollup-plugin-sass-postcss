@@ -1,8 +1,8 @@
 # rollup-plugin-sass-postcss
 
-[![npm version](https://img.shields.io/npm/v/rollup-plugin-sass-postcss.svg)](https://www.npmjs.com/package/rollup-plugin-sass-postcss)
-[![dependency Status](https://david-dm.org/koffeine/rollup-plugin-sass-postcss/status.svg)](https://david-dm.org/koffeine/rollup-plugin-sass-postcss)
-[![devDependency Status](https://david-dm.org/koffeine/rollup-plugin-sass-postcss/dev-status.svg)](https://david-dm.org/koffeine/rollup-plugin-sass-postcss?type=dev)
+[![npm](https://img.shields.io/npm/v/rollup-plugin-sass-postcss)](https://www.npmjs.com/package/rollup-plugin-sass-postcss)
+[![dependencies Status](https://david-dm.org/koffeine/rollup-plugin-sass-postcss/status.svg)](https://david-dm.org/koffeine/rollup-plugin-sass-postcss)
+[![devDependencies Status](https://david-dm.org/koffeine/rollup-plugin-sass-postcss/dev-status.svg)](https://david-dm.org/koffeine/rollup-plugin-sass-postcss?type=dev)
 
 Rollup plugin for Sass and PostCSS
 
