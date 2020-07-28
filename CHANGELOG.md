@@ -8,6 +8,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+
+## [1.0.11] - 2020-07-28
+
 ### Changed
 
 - Renamed package to @koffeine/rollup-plugin-sass-postcss
