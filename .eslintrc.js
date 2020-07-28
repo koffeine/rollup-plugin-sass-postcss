@@ -2,7 +2,7 @@
 
 module.exports = {
 	root: true,
-	extends: 'koffeine',
+	extends: '@koffeine',
 	parserOptions: {
 		ecmaVersion: 2020, // 11
 		sourceType: 'script'

@@ -1,6 +1,6 @@
 # rollup-plugin-sass-postcss
 
-[![npm](https://img.shields.io/npm/v/rollup-plugin-sass-postcss)](https://www.npmjs.com/package/rollup-plugin-sass-postcss)
+[![npm (scoped)](https://img.shields.io/npm/v/@koffeine/rollup-plugin-sass-postcss)](https://www.npmjs.com/package/@koffeine/rollup-plugin-sass-postcss)
 [![dependencies Status](https://david-dm.org/koffeine/rollup-plugin-sass-postcss/status.svg)](https://david-dm.org/koffeine/rollup-plugin-sass-postcss)
 [![devDependencies Status](https://david-dm.org/koffeine/rollup-plugin-sass-postcss/dev-status.svg)](https://david-dm.org/koffeine/rollup-plugin-sass-postcss?type=dev)
 
@@ -20,10 +20,16 @@ Rollup plugin for Sass and PostCSS
 	- Generates correct sourcemap file that traces back to the original imported file
 	- Makes sources relative to cwd
 
+## Installation
+
+```sh
+npm install @koffeine/rollup-plugin-sass-postcss --save-dev
+```
+
 ## Usage
 
 ```js
-import sassPostcss from 'rollup-plugin-sass-postcss';
+import sassPostcss from '@koffeine/rollup-plugin-sass-postcss';
 
 export default {
 	// ...

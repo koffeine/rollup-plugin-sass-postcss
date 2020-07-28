@@ -10,7 +10,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Changed
 
-- README.md badge cleanup
+- Renamed package to @koffeine/rollup-plugin-sass-postcss
 
 
 ## [1.0.10] - 2020-07-26
