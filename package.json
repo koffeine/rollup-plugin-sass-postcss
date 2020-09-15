@@ -24,8 +24,8 @@
     "url": "git+https://github.com/koffeine/rollup-plugin-sass-postcss.git"
   },
   "devDependencies": {
-    "@koffeine/eslint-config": "16.0.0",
-    "eslint": "7.8.1"
+    "@koffeine/eslint-config": "16.0.1",
+    "eslint": "7.9.0"
   },
   "dependencies": {
     "@rollup/pluginutils": "4.0.0",
