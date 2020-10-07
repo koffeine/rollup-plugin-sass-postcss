@@ -10,7 +10,22 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Changed
 
-- Updated @rollup/pluginutils to 4.0.0
+- Rollup
+	- Replaced deprecated this.moduleIds with this.getModuleIds()
+	- Replaced fs.writeFile() with this.emitFile() (this also means output is now relative to output.dir)
+	- Required version changed to ^2.9.0 because of the changes above
+	- Added to peerDependencies
+	- Also added to devDependencies to remove install warning
+- Sass
+	- Required version changed to ^1.0.0
+	- Moved to peerDependencies
+- PostCSS
+	- Required version changed to ^7.0.0 || ^8.0.0
+	- Moved to peerDependencies
+- @rollup/pluginutils
+	- Updated to ^4.0.0
+- concat-with-sourcemaps
+	- Updated to ^1.1.0
 - Updated devDependencies
 
 

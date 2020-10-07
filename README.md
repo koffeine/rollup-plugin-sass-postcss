@@ -23,7 +23,7 @@ Rollup plugin for Sass and PostCSS
 ## Installation
 
 ```sh
-npm install @koffeine/rollup-plugin-sass-postcss --save-dev
+npm install @koffeine/rollup-plugin-sass-postcss sass postcss --save-dev
 ```
 
 ## Usage
@@ -51,7 +51,7 @@ export default {
 			// type: array of PostCSS plugins
 			plugins: [],
 
-			// where to save the output file (required)
+			// where to save the output file which is a Rollup asset relative to output.dir (required)
 			// type: string
 			output: undefined
 		})

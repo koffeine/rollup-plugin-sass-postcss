@@ -1,7 +1,6 @@
 'use strict';
 
 const { basename, dirname, extname, join, relative } = require('path');
-const { mkdirSync, writeFileSync } = require('fs');
 
 const { createFilter } = require('@rollup/pluginutils');
 
@@ -58,7 +57,7 @@ module.exports = ({
 		},
 
 		generateBundle() {
-			const ids = Array.from(this.moduleIds).filter((id) => id in styles);
+			const ids = Array.from(this.getModuleIds()).filter((id) => id in styles);
 
 			if (ids.length === 0) {
 				return;
@@ -69,13 +68,23 @@ module.exports = ({
 
 			const { code, map } = concat(sourcemap, outputBasename, ids.map((id) => ({ id, ...styles[id] })));
 
-			mkdirSync(dirname(output), { recursive: true });
-
 			if (map) {
-				writeFileSync(output, `${code}\n/*# sourceMappingURL=${outputBasename}.map */`);
-				writeFileSync(`${output}.map`, map);
+				this.emitFile({
+					type: 'asset',
+					fileName: output,
+					source: `${code}\n/*# sourceMappingURL=${outputBasename}.map */`
+				});
+				this.emitFile({
+					type: 'asset',
+					fileName: `${output}.map`,
+					source: map
+				});
 			} else {
-				writeFileSync(output, code);
+				this.emitFile({
+					type: 'asset',
+					fileName: output,
+					source: code
+				});
 			}
 		}
 	};

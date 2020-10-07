@@ -25,12 +25,16 @@
   },
   "devDependencies": {
     "@koffeine/eslint-config": "16.0.2",
-    "eslint": "7.10.0"
+    "eslint": "7.10.0",
+    "rollup": "^2.9.0"
   },
   "dependencies": {
-    "@rollup/pluginutils": "4.0.0",
-    "concat-with-sourcemaps": "1.1.0",
-    "postcss": "7.0.32",
-    "sass": "1.26.10"
+    "@rollup/pluginutils": "^4.0.0",
+    "concat-with-sourcemaps": "^1.1.0"
+  },
+  "peerDependencies": {
+    "rollup": "^2.9.0",
+    "postcss": "^7.0.0 || ^8.0.0",
+    "sass": "^1.0.0"
   }
 }
