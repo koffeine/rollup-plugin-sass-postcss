@@ -4,11 +4,11 @@ module.exports = {
 	root: true,
 	extends: '@koffeine',
 	parserOptions: {
-		ecmaVersion: 2020, // 11
+		ecmaVersion: 2021, // 12
 		sourceType: 'script'
 	},
 	env: {
-		es2020: true,
+		es2021: true,
 		node: true
 	}
 };
