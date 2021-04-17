@@ -25,8 +25,7 @@
   },
   "devDependencies": {
     "@koffeine/eslint-config": "19.0.0",
-    "eslint": "7.24.0",
-    "rollup": "^2.9.0"
+    "eslint": "7.24.0"
   },
   "dependencies": {
     "@rollup/pluginutils": "^4.0.0",
