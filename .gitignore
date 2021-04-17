@@ -1,5 +1,5 @@
-# NPM
-node_modules/
-
 # Sublime Text
 *.sublime-*
+
+# NPM
+node_modules/
