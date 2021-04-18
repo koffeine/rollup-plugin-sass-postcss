@@ -47,10 +47,7 @@ module.exports = ({
 						result.map.sources = result.map.sources.map((source) => join(base, source));
 					}
 
-					styles[id] = {
-						code: result.code,
-						map: result.map
-					};
+					styles[id] = result;
 
 					return '';
 				});
