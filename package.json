@@ -23,17 +23,26 @@
     "type": "git",
     "url": "git+https://github.com/koffeine/rollup-plugin-sass-postcss.git"
   },
+  "scripts": {
+    "test": "eslint index.js lib && mocha"
+  },
   "devDependencies": {
     "@koffeine/eslint-config": "19.0.0",
-    "eslint": "7.24.0"
+    "chai": "^4",
+    "cssnano": "^5",
+    "eslint": "7.24.0",
+    "mocha": "^8",
+    "postcss": "^8",
+    "rollup": "^2.9.0",
+    "sass": "^1"
   },
   "dependencies": {
-    "@rollup/pluginutils": "^4.0.0",
+    "@rollup/pluginutils": "^4",
     "concat-with-sourcemaps": "^1.1.0"
   },
   "peerDependencies": {
     "rollup": "^2.9.0",
-    "postcss": "^7.0.0 || ^8.0.0",
-    "sass": "^1.0.0"
+    "postcss": "^7 || ^8",
+    "sass": "^1"
   }
 }
