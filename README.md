@@ -3,6 +3,7 @@
 [![npm (scoped)](https://img.shields.io/npm/v/@koffeine/rollup-plugin-sass-postcss)](https://www.npmjs.com/package/@koffeine/rollup-plugin-sass-postcss)
 [![dependencies Status](https://david-dm.org/koffeine/rollup-plugin-sass-postcss/status.svg)](https://david-dm.org/koffeine/rollup-plugin-sass-postcss)
 [![devDependencies Status](https://david-dm.org/koffeine/rollup-plugin-sass-postcss/dev-status.svg)](https://david-dm.org/koffeine/rollup-plugin-sass-postcss?type=dev)
+[![peerDependencies Status](https://david-dm.org/koffeine/rollup-plugin-sass-postcss/peer-status.svg)](https://david-dm.org/koffeine/rollup-plugin-sass-postcss?type=peer)
 
 Rollup plugin for Sass and PostCSS
 
