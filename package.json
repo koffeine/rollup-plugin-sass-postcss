@@ -27,7 +27,7 @@
     "test": "eslint index.js lib && mocha"
   },
   "devDependencies": {
-    "@koffeine/eslint-config": "19.0.0",
+    "@koffeine/eslint-config": "19.1.0",
     "chai": "^4",
     "cssnano": "^5",
     "eslint": "7.24.0",
