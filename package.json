@@ -27,10 +27,10 @@
     "test": "eslint index.js lib && mocha"
   },
   "devDependencies": {
-    "@koffeine/eslint-config": "19.1.1",
+    "@koffeine/eslint-config": "19.1.2",
     "chai": "^4",
     "cssnano": "^5",
-    "eslint": "7.25.0",
+    "eslint": "7.26.0",
     "mocha": "^8",
     "postcss": "^8",
     "rollup": "^2.9.0",
