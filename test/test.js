@@ -10,13 +10,13 @@ const rollup = require('rollup');
 const sassPostcss = require('..');
 const cssnano = require('cssnano');
 
-function relative(fileName) {
+const relative = (fileName) => {
 	return path.join(__dirname, fileName);
-}
+};
 
-function getAssetSource(assets, name) {
+const getAssetSource = (assets, name) => {
 	return assets.find((asset) => asset.type === 'asset' && asset.fileName === name)?.source;
-}
+};
 
 describe('without sourcemap', () => {
 	let bundle;
