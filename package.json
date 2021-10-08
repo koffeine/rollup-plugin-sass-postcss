@@ -16,9 +16,11 @@
   "license": "MIT",
   "author": "Kornél Horváth <kornel.horvath@me.com>",
   "files": [
-    "lib"
+    "lib",
+    "index.d.ts"
   ],
   "main": "index.js",
+  "types": "index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/koffeine/rollup-plugin-sass-postcss.git"
