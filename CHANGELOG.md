@@ -13,49 +13,37 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Added TypeScript definitions
-- Added tests
-- Added peerDependencies badge to README.md
-
-### Changed
-
-- Updated devDependencies
-- Updated project files
-- Code cleanup
-
-### Removed
-
-- Removed rollup as a devDependency
+- Added TypeScript declarations
 
 
 ## [2.0.0] - 2020-10-07
 
+### Added
+
+- Added postcss 8.x support
+
 ### Changed
 
-- Rollup
-	- Replaced deprecated this.moduleIds with this.getModuleIds()
-	- Replaced fs.writeFile() with this.emitFile() (this also means output is now relative to output.dir)
-	- Required version changed to ^2.9.0 because of the changes above
-	- Added to peerDependencies
-	- Also added to devDependencies to remove install warning
-- Sass
-	- Required version changed to ^1.0.0
-	- Moved to peerDependencies
-- PostCSS
-	- Required version changed to ^7.0.0 || ^8.0.0
-	- Moved to peerDependencies
-- @rollup/pluginutils
-	- Updated to ^4.0.0
-- concat-with-sourcemaps
-	- Updated to ^1.1.0
-- Updated devDependencies
+- Updated @rollup/pluginutils to ^4.0.0
+- Updated concat-with-sourcemaps to ^1.1.0
+- Changed postcss to a peer dependency
+- Updated postcss to ^7.0.0 || ^8.0.0
+- Added rollup to a peer dependency
+- Updated rollup to ^2.9.0
+- Changed sass to a peer dependency
+- Updated sass to ^1.0.0
+- Output option is now relative to rollup's output.dir option
+
+### Removed
+
+- Removed rollup < 2.9 support
 
 
 ## [1.0.11] - 2020-07-28
 
 ### Changed
 
-- Renamed package to @koffeine/rollup-plugin-sass-postcss
+- Renamed package to `@koffeine/rollup-plugin-sass-postcss`
 
 
 ## [1.0.10] - 2020-07-26
@@ -65,7 +53,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Updated @rollup/pluginutils to 3.1.0
 - Updated postcss to 7.0.32
 - Updated sass to 1.26.10
-- Updated devDependencies
 
 ### Fixed
 
@@ -84,10 +71,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- Updated sass to 1.24.4
+- Updated @rollup/pluginutils to 3.0.3
 - Updated postcss to 7.0.26
-- Changed rollup-pluginutils to @rollup/pluginutils
-- Updated devDependencies
+- Updated sass to 1.24.4
 
 
 ## [1.0.7] - 2019-12-09
@@ -95,8 +81,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Updated postcss to 7.0.24
-- Updated eslint to 6.7.1
-- Updated eslint-config-koffeine to 14.0.0
 
 
 ## [1.0.6] - 2019-11-20
@@ -132,8 +116,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Updated postcss to 7.0.21
-- Updated eslint to 6.6.0
-- Updated eslint-config-koffeine to 13.0.0
 
 ## [1.0.1] - 2019-10-25
 
