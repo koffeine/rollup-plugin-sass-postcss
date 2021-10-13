@@ -29,21 +29,21 @@
     "test": "eslint index.js lib && mocha"
   },
   "devDependencies": {
-    "@koffeine/eslint-config": "20.0.0",
+    "@koffeine/eslint-config": "22.0.0",
     "chai": "^4",
     "cssnano": "^5",
-    "eslint": "7.32.0",
+    "eslint": "8.0.0",
     "mocha": "^9",
     "postcss": "^8",
-    "rollup": "^2.9.0",
+    "rollup": "^2.9",
     "sass": "^1"
   },
   "dependencies": {
     "@rollup/pluginutils": "^4",
-    "concat-with-sourcemaps": "^1.1.0"
+    "concat-with-sourcemaps": "^1"
   },
   "peerDependencies": {
-    "rollup": "^2.9.0",
+    "rollup": "^2.9",
     "postcss": "^7 || ^8",
     "sass": "^1"
   }
