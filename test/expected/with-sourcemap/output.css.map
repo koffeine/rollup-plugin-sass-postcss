@@ -1,1 +1,1 @@
-{"version":3,"sources":["test/input/_h1.sass","test/input/index.sass"],"names":[],"mappings":"AAAA,GACC,cAAA,CCCD,KACC,qBAAA","file":"output.css","sourcesContent":["h1\n\tfont-size: 2rem","@import ./_h1.sass\n\nbody\n\tbackground-color: white"]}
+{"version":3,"sources":["test/input/_h1.sass","test/input/index.sass"],"names":[],"mappings":"AAAA,GACC,cAAA,CCCD,KACC,qBAAA","file":"output.css","sourcesContent":["h1\n\tfont-size: 2rem\n","@import ./_h1.sass\n\nbody\n\tbackground-color: white\n"]}

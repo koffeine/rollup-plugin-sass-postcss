@@ -53,7 +53,7 @@ describe('without sourcemap', () => {
 	it('should generate expected output', () => {
 		const actual = getAssetSource(output, 'output.css');
 
-		const expected = fs.readFileSync(relative('expected/without-sourcemap/output.css'), { encoding: 'utf-8' });
+		const expected = fs.readFileSync(relative('expected/without-sourcemap/output.css'), { encoding: 'utf-8' }).slice(0, -1);
 
 		assert.strictEqual(actual, expected);
 	});
@@ -94,7 +94,7 @@ describe('with sourcemap', () => {
 	it('should generate expected output', () => {
 		const actual = getAssetSource(output, 'output.css');
 
-		const expected = fs.readFileSync(relative('expected/with-sourcemap/output.css'), { encoding: 'utf-8' });
+		const expected = fs.readFileSync(relative('expected/with-sourcemap/output.css'), { encoding: 'utf-8' }).slice(0, -1);
 
 		assert.strictEqual(actual, expected);
 	});
@@ -108,7 +108,7 @@ describe('with sourcemap', () => {
 	it('should generate expected sourcemap', () => {
 		const actual = getAssetSource(output, 'output.css.map');
 
-		const expected = fs.readFileSync(relative('expected/with-sourcemap/output.css.map'), { encoding: 'utf-8' });
+		const expected = fs.readFileSync(relative('expected/with-sourcemap/output.css.map'), { encoding: 'utf-8' }).slice(0, -1);
 
 		assert.strictEqual(actual, expected);
 	});
