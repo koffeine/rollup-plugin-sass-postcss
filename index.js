@@ -14,7 +14,7 @@ module.exports = ({
 	sourcemap = false,
 	plugins = [],
 	output
-} = {}) => {
+}) => {
 
 	const filter = createFilter(include, exclude);
 
@@ -41,8 +41,6 @@ module.exports = ({
 				.then((result) => {
 					if (result.map) {
 						const base = relative(process.cwd(), dirname(id));
-
-						result.map = JSON.parse(result.map);
 
 						result.map.sources = result.map.sources.map((source) => join(base, source));
 					}
