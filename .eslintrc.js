@@ -4,11 +4,19 @@ module.exports = {
 	root: true,
 	extends: '@koffeine',
 	parserOptions: {
-		ecmaVersion: 2021, // 12
+		ecmaVersion: 'latest',
 		sourceType: 'script'
 	},
 	env: {
 		es2021: true,
 		node: true
-	}
+	},
+	overrides: [
+		{
+			files: 'test/**/*',
+			env: {
+				mocha: true
+			}
+		}
+	]
 };
