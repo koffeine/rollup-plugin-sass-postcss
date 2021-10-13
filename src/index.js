@@ -4,9 +4,9 @@ const { basename, dirname, extname, join, relative } = require('path');
 
 const { createFilter } = require('@rollup/pluginutils');
 
-const sass = require('./lib/sass.js');
-const postcss = require('./lib/postcss.js');
-const concat = require('./lib/concat.js');
+const sass = require('./sass.js');
+const postcss = require('./postcss.js');
+const concat = require('./concat.js');
 
 module.exports = ({
 	include = [ /\.sass/u, /\.scss/u ],

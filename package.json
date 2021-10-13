@@ -16,17 +16,17 @@
   "license": "MIT",
   "author": "Kornél Horváth <kornel.horvath@me.com>",
   "files": [
-    "lib",
+    "src",
     "index.d.ts"
   ],
-  "main": "index.js",
+  "main": "src/index.js",
   "types": "index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/koffeine/rollup-plugin-sass-postcss.git"
   },
   "scripts": {
-    "test": "eslint index.js lib test/*.js && mocha"
+    "test": "eslint src test/*.js && mocha"
   },
   "devDependencies": {
     "@koffeine/eslint-config": "22.0.0",
