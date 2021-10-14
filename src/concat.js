@@ -1,8 +1,6 @@
-'use strict';
+import Concat from 'concat-with-sourcemaps';
 
-const Concat = require('concat-with-sourcemaps');
-
-module.exports = (sourcemap, outputBasename, styles) => {
+export default (sourcemap, outputBasename, styles) => {
 	const concat = new Concat(sourcemap, outputBasename, '');
 
 	styles.forEach(({ id, code, map }) => concat.add(id, code, map));

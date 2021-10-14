@@ -1,14 +1,12 @@
-'use strict';
+import { basename, dirname, extname, join, relative } from 'path';
 
-const { basename, dirname, extname, join, relative } = require('path');
+import { createFilter } from '@rollup/pluginutils';
 
-const { createFilter } = require('@rollup/pluginutils');
+import sass from './sass.js';
+import postcss from './postcss.js';
+import concat from './concat.js';
 
-const sass = require('./sass.js');
-const postcss = require('./postcss.js');
-const concat = require('./concat.js');
-
-module.exports = ({
+export default ({
 	include = [ /\.sass/u, /\.scss/u ],
 	exclude,
 	sourcemap = false,

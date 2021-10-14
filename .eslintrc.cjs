@@ -5,7 +5,7 @@ module.exports = {
 	extends: '@koffeine',
 	parserOptions: {
 		ecmaVersion: 'latest',
-		sourceType: 'script'
+		sourceType: 'module'
 	},
 	env: {
 		es2021: true,
@@ -16,6 +16,12 @@ module.exports = {
 			files: 'test/**/*',
 			env: {
 				mocha: true
+			}
+		},
+		{
+			files: '*.cjs',
+			parserOptions: {
+				sourceType: 'script'
 			}
 		}
 	]
