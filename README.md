@@ -1,4 +1,7 @@
-# rollup-plugin-sass-postcss
+<h1>
+	rollup-plugin-sass-postcss
+	<a href="https://www.npmjs.com/package/@koffeine/rollup-plugin-sass-postcss"><img alt="npm" src="https://img.shields.io/npm/v/@koffeine/rollup-plugin-sass-postcss"></a>
+</h1>
 
 Rollup plugin for Sass and PostCSS
 
