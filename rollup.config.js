@@ -1,13 +1,19 @@
 import nodeResolve from '@rollup/plugin-node-resolve';
+import esbuild from 'rollup-plugin-esbuild';
 
 import { builtinModules } from 'module';
 import pkg from './package.json';
 
 export default {
 	external: [ ...builtinModules, ...Object.keys(pkg.dependencies), ...Object.keys(pkg.peerDependencies) ],
-	input: 'src/index.js',
+	input: 'src/index.ts',
 	plugins: [
-		nodeResolve()
+		nodeResolve(),
+		esbuild({
+			tsconfig: false,
+			target: 'esnext',
+			sourceMap: false
+		})
 	],
 	output: [
 		{

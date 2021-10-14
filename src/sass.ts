@@ -1,6 +1,6 @@
 import sass from 'sass';
 
-export default (id, outId, code, sourcemap) => {
+export default (id: string, outId: string, code: string, sourcemap: boolean): { code: string, map?: string, dependencies: string[] } => {
 	const { css, map, stats } = sass.renderSync({
 		file: id,
 		data: code,
