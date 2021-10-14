@@ -20,6 +20,7 @@
     "types.d.ts"
   ],
   "exports": "./src/index.js",
+  "type": "module",
   "types": "types.d.ts",
   "repository": {
     "type": "git",

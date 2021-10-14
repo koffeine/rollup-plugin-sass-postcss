@@ -1,14 +1,11 @@
-'use strict';
+import { assert } from 'chai';
+import fs from 'fs';
 
-const { assert } = require('chai');
-const path = require('path');
-const fs = require('fs');
+import { rollup } from 'rollup';
+import sassPostcss from '../src/index.js';
+import cssnano from 'cssnano';
 
-const { rollup } = require('rollup');
-const sassPostcss = require('../src/index.js');
-const cssnano = require('cssnano');
-
-const relative = (fileName) => path.join(__dirname, fileName);
+const relative = (fileName) => new URL(fileName, import.meta.url).pathname;
 
 const getAssetSource = (assets, name) => {
 	const found = assets.find((asset) => asset.type === 'asset' && asset.fileName === name);
@@ -22,7 +19,7 @@ describe('without sourcemap', () => {
 
 	it('should work with Rollup & PostCSS', async () => {
 		bundle = await rollup({
-			input: relative('input/index.js'),
+			input: relative('./input/index.js'),
 			plugins: [
 				sassPostcss({
 					sourcemap: false,
@@ -38,8 +35,8 @@ describe('without sourcemap', () => {
 	});
 
 	it('should watch for changes in all Sass files loaded during compilation', () => {
-		assert.include(bundle.watchFiles, relative('input/index.sass'));
-		assert.include(bundle.watchFiles, relative('input/_h1.sass'));
+		assert.include(bundle.watchFiles, relative('./input/index.sass'));
+		assert.include(bundle.watchFiles, relative('./input/_h1.sass'));
 	});
 
 	it('should generate output', () => {
@@ -50,7 +47,7 @@ describe('without sourcemap', () => {
 
 	it('should generate expected output', () => {
 		const actual = getAssetSource(output, 'output.css');
-		const expected = fs.readFileSync(relative('expected/without-sourcemap/output.css'), { encoding: 'utf-8' }).slice(0, -1);
+		const expected = fs.readFileSync(relative('./expected/without-sourcemap/output.css'), { encoding: 'utf-8' }).slice(0, -1);
 
 		assert.strictEqual(actual, expected);
 	});
@@ -67,7 +64,7 @@ describe('with sourcemap', () => {
 
 	it('should work with Rollup & PostCSS', async () => {
 		const bundle = await rollup({
-			input: relative('input/index.js'),
+			input: relative('./input/index.js'),
 			plugins: [
 				sassPostcss({
 					sourcemap: true,
@@ -90,7 +87,7 @@ describe('with sourcemap', () => {
 
 	it('should generate expected output', () => {
 		const actual = getAssetSource(output, 'output.css');
-		const expected = fs.readFileSync(relative('expected/with-sourcemap/output.css'), { encoding: 'utf-8' }).slice(0, -1);
+		const expected = fs.readFileSync(relative('./expected/with-sourcemap/output.css'), { encoding: 'utf-8' }).slice(0, -1);
 
 		assert.strictEqual(actual, expected);
 	});
@@ -103,7 +100,7 @@ describe('with sourcemap', () => {
 
 	it('should generate expected sourcemap', () => {
 		const actual = getAssetSource(output, 'output.css.map');
-		const expected = fs.readFileSync(relative('expected/with-sourcemap/output.css.map'), { encoding: 'utf-8' }).slice(0, -1);
+		const expected = fs.readFileSync(relative('./expected/with-sourcemap/output.css.map'), { encoding: 'utf-8' }).slice(0, -1);
 
 		assert.strictEqual(actual, expected);
 	});

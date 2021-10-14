@@ -40,4 +40,4 @@ declare const sassPostcss: (options: {
 
 }) => Plugin;
 
-export = sassPostcss;
+export default sassPostcss;

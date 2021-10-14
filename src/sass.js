@@ -1,8 +1,6 @@
-'use strict';
+import sass from 'sass';
 
-const sass = require('sass');
-
-module.exports = (id, outId, code, sourcemap) => {
+export default (id, outId, code, sourcemap) => {
 	const { css, map, stats } = sass.renderSync({
 		file: id,
 		data: code,

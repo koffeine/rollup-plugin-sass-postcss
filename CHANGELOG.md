@@ -8,6 +8,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Added ES module export
+
+### Removed
+
+- Removed CommonJS module export
+
 
 ## [2.1.1] - 2021-10-16
 
