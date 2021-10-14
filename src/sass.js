@@ -17,7 +17,7 @@ module.exports = (id, outId, code, sourcemap) => {
 
 	return {
 		code: css.toString(),
-		map: map ? map.toString() : null,
+		map: map && map.toString(),
 		dependencies: stats.includedFiles.filter((includedFile) => includedFile !== id)
 	};
 };

@@ -14,5 +14,5 @@ module.exports = (id, outId, code, sourcemap, plugins) =>
 		)
 		.then(({ css, map }) => ({
 			code: css,
-			map: typeof map == 'undefined' ? null : map.toJSON()
+			map: map && map.toJSON()
 		}));
