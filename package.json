@@ -29,7 +29,7 @@
     "test": "eslint src test/*.js && mocha"
   },
   "devDependencies": {
-    "@koffeine/eslint-config": "23.1.0",
+    "@koffeine/eslint-config": "23.2.0",
     "chai": "^4",
     "cssnano": "^5",
     "eslint": "8.0.1",
