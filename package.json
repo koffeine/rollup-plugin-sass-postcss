@@ -17,10 +17,10 @@
   "author": "Kornél Horváth <kornel.horvath@me.com>",
   "files": [
     "src",
-    "index.d.ts"
+    "types.d.ts"
   ],
   "exports": "./src/index.js",
-  "types": "index.d.ts",
+  "types": "types.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/koffeine/rollup-plugin-sass-postcss.git"
